@@ -1,0 +1,11 @@
+@import 'config.scss';
+@import 'menu.scss';
+
+body{
+  @include background;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+}

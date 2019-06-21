@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/ -o dist/css/ --recursive"
+  },
+  "watches": {
+    "sass": "sass/**"
   },
   "repository": {
     "type": "git",

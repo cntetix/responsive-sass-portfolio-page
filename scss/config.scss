@@ -1,6 +1,7 @@
 $home-img: url(../img/bg.jpg);
 $primary-color: #444;
 $background-opacity: 0.9;
+$secondary-color: #eece1a;
 
 @mixin background {
   &#bg-img{
@@ -19,4 +20,15 @@ $background-opacity: 0.9;
       background: rgba($primary-color, $background-opacity);
     }
   }
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+@mixin easeOut{
+  transition: all 0.5s ease-out;
 }

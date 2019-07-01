@@ -62,4 +62,53 @@
       transform: translate3d(0, 0, 0);
     }
   }
+  &-branding {
+    background: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+    .portrait{
+      width: 250px;
+      height: 250px;
+      background: url("https://i.stack.imgur.com/l60Hf.png");
+      background-size: cover;
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+  .nav-item{
+    transform: translate3d(0, 0, 0);
+    @include easeOut;
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+    &.current > a{
+      color: $secondary-color;
+          }
+
+  }
+  .nav-link{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: set-text-color($primary-color);
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover{
+      color: #3e1606;
+    }
+  }
 }
+//uzdelsimas menu
+@for $x from 1 through 4{
+  .nav-item:nth-child(#{$x}){
+  transition-delay: $x * 0.3s;
+}
+}
+

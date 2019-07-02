@@ -14,6 +14,7 @@
     background: set-text-color($primary-color);
     @include easeOut;
   }
+  // generuojame grazu meniu ir X po JS paspaudimo
 &.close{
   transform: rotate(180deg);
   .btn-line{
@@ -105,7 +106,7 @@
     }
   }
 }
-//uzdelsimas menu
+//uzdelsimas menu, for ciklas
 @for $x from 1 through 4{
   .nav-item:nth-child(#{$x}){
   transition-delay: $x * 0.3s;

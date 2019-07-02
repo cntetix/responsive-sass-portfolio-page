@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style class="">
+    .parent{
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+
+    }
+    .parent-2{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .parent-2 div{
+        border: 1px solid grey;
+    }
+    .parent div{
+        border: 1px solid grey;
+        padding: 10px;
+    }
+    .children-1{
+        flex: 2;
+        order: 1;
+        /*align-items: flex-start;*/
+    }
+    .children-2{
+        flex: 3;
+        order: 3;
+    }
+    .children-3{
+        flex: 1;
+        order: 4;
+    }
+    .children-4{
+        flex: 5;
+        order: 2;
+    }
+    @media(max-width: 768px) {
+        .parent-2{
+            flex-direction: column;
+        }
+
+    }
+</style>
+<div class="parent">
+    <div class="children-1"><h1 class="">my heading1</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififi</p></div>
+    <div class="children-2"><h1 class="">my heading2</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififi</p></div>
+    <div class="children-3"><h1 class="">my heading3</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfi lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfi lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfilorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfi</p></div>
+    <div class="children-4"><h1 class="">my heading4</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififi</p></div>
+</div>
+<div class="parent-2">
+    <div class="children-1-2"><h1 class="">my heading1</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififi</p></div>
+    <div class="children-2-2"><h1 class="">my heading2</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififivfi ivfivfi lorem ipsu</p></div>
+    <div class="children-3-2"><h1 class="">my heading3</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififi</p></div>
+    <div class="children-4-2"><h1 class="">my heading4</h1><p class="">lorem ipsum jfjjf jfj jfn ifjjf ifnfhi jfiffin ififi</p></div>
+</div>
+</body>
+</html>

@@ -4,6 +4,7 @@
 body{
   @include background;
   background: $primary-color;
+  //kvieciame set-text-color funkcija, paduodame $primary-color kintamaji sklaustuose
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
@@ -13,6 +14,7 @@ body{
 h1, h2, h3{
   margin: 0;
   font-weight: 400;
+  // & - kas pries tevo sklaustus: h1, ...
   &.lg-heading{
     font-size: 6rem;
   }
@@ -56,6 +58,7 @@ main{
     }
   }
 }
+//pradedame naudoti grid'a about html
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -109,7 +112,50 @@ main{
 
   }
 }
+//contact page, naudojame flex'a
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  div{
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    //ikeliame easeOut Mixina
+    @include easeOut;
+    &:hover{
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span{
+        color: set-text-color($secondary-color);
 
+      }
+    }
+  }
+}
+
+.btn{
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover{
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+
+  }
+}
+.btn-light{
+  //iterpiam .btn koda: display <...>$secondary-color
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+
+}
 
 #main-footer{
   text-align: center;
@@ -119,3 +165,5 @@ main{
   height: 60px;
 
 }
+
+@import "mobile";
